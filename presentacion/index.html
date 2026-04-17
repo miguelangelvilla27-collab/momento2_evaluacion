@@ -1,0 +1,52 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CRUD Visitas Médicas</title>
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<h1>Gestión de Visitas Médicas</h1>
+
+<form id="formVisita">
+    <input type="hidden" id="id">
+
+    <label>Paciente:</label>
+    <input type="text" id="paciente" required>
+
+    <label>Fecha:</label>
+    <input type="date" id="fecha" required>
+
+    <label>Motivo:</label>
+    <input type="text" id="motivo" required>
+
+    <label>Diagnóstico:</label>
+    <input type="text" id="diagnostico" required>
+
+    <button type="submit">Guardar</button>
+</form>
+
+<hr>
+
+<h2>Listado</h2>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Paciente</th>
+            <th>Fecha</th>
+            <th>Motivo</th>
+            <th>Diagnóstico</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody id="tablaVisitas"></tbody>
+</table>
+
+<script src="js/app.js"></script>
+</body>
+</html>
