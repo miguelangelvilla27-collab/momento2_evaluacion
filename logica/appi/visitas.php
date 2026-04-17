@@ -1,7 +1,8 @@
 <?php
 header("Content-Type: application/json");
 
-$archivo = __DIR__ . "/../../datos/visitas.json";
+$archivo = __DIR__ . "/../../datos/json/visitas.json"; // Ruta archivo
+
 
 if(!file_exists($archivo)){
     file_put_contents($archivo, "[]");
